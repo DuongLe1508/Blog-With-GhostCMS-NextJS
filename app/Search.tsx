@@ -16,7 +16,7 @@ function Search() {
   useEffect(() => {
     searchPost.length = 0;
 
-    searchData.map((item: PostOrPage) => {
+    searchData.map((item: any) => {
       if (
         item?.title?.trim().toLowerCase().includes(query?.trim().toLowerCase())
       ) {
